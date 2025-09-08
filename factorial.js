@@ -1,11 +1,12 @@
-const readline = require('readline');
+const readline = require("readline");
 
 const rl = readline.createInterface({
-    input:process.stdin,
-    output:process.stdout
+    input: process.stdin,
+    output: process.stdout
 })
 
-console.log("Factorial Application");
+function mainMenu(){
+    console.log("Factorial Application");
 
 console.log("1. Say Hello");
 console.log("2. Compile Factorial");
@@ -40,3 +41,4 @@ rl.question("Enter your choice (1-3)" , choice =>{
         console.log("Invalid choice. Please try again");
     }
 })
+}
