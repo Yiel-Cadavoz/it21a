@@ -13,7 +13,7 @@ class Person{
         console.log("Name: " + this.name);
         console.log("Age: " + this.age);
         console.log("Occupation: " + this.occupation);
-        
+        console.log("-----------------");
     }
 }
 
