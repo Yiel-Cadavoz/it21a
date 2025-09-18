@@ -66,8 +66,6 @@ const staff = new Item("Staff",10);
 const Thorin = new Warrior("Thorin", 100, 10);
 Thorin.getName();
 console.log("");
-console.log("Hero Thorin Inflicted Damage: ");
-Thorin.getAttack();
 Thorin.addItem(sword);
 console.log(Thorin.totalAttack());
 Thorin.addItem(sword);
@@ -82,7 +80,7 @@ console.log(Thorin.totalAttack());
 //Gandalf.getStats();
 
 function performAbility(hero){
-    console.log("\n");
+    console.log("");
     hero.useAbility();
 }
 
