@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Radar Chart</h1>
+    <div>
+  <canvas id="radarChart"></canvas>
+</div>
+</body>
+<script>
+    class radarChart{
+        constructor(canvasId, dataUrl){
+            this.canvasId = canvasId;
+            this.dataUrl = dataUrl;
+            this.chart = null;
+        }
+
+        renderChart(data){
+            const ctx = document.getElementById(this.canvasId).getContext("2d");//instance
+
+            this.chart = new Chart(ctx,{
+                //Properties
+                type:"radar",
+                data:{
+                    //Labels
+                    labels:data.labels,
+                    //Datasets
+                    datasets: data.datasets
+                },
+            });//instance basta naa'y new nga word.
+        }
+    }
+</script>
+</html>
